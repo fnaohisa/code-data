@@ -1,0 +1,103 @@
+/* Scss Document */
+/* clearfix - utility
+--------------------------------------------------------- */
+.u-bold {
+  font-weight: 600 !important;
+  font-family: "ヒラギノ角ゴ ProN W5", sans-serif;
+}
+
+.u-normal {
+  font-weight: 400 !important;
+}
+
+.u-center {
+  text-align: center;
+}
+
+.u-cf {
+  *zoom: 1;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.u-for-pc {
+  display: inline-block;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.u-for-sp {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+
+.u-link {
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.u-text-link {
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  text-decoration: underline;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.u-none {
+  display: none;
+}
+
+.u-mc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+$min: 1;
+$max: 15;
+
+@for $i from $min through $max {
+  .u-mt-#{$i} {
+    margin-top: #{$i * 1%};
+  }
+
+  .u-mr-#{$i} {
+    margin-right: #{$i * 1%};
+  }
+
+  .u-mb-#{$i} {
+    margin-bottom: #{$i * 1%};
+  }
+
+  .u-ml-#{$i} {
+    margin-left: #{$i * 1%};
+  }
+
+  .u-pt-#{$i} {
+    padding-top: #{$i * 1%};
+  }
+
+  .u-pr-#{$i} {
+    padding-right: #{$i * 1%};
+  }
+
+  .u-pb-#{$i} {
+    padding-bottom: #{$i * 1%};
+  }
+
+  .u-pl-#{$i} {
+    padding-left: #{$i * 1%};
+  }
+}
+
+/*# sourceMappingURL=utility-style.css.map */
